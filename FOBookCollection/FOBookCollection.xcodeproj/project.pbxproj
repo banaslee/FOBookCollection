@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E55429F419C60D61001C40BB /* FOBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E55429F319C60D61001C40BB /* FOBookCell.m */; };
+		E55429F719C6131E001C40BB /* FOBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E55429F619C6131E001C40BB /* FOBook.m */; };
+		E56EB2BB19C61EC0009502CE /* FOContinuousLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56EB2BA19C61EC0009502CE /* FOContinuousLoadingView.m */; };
 		E591C99A19C5CC1100471A2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C99919C5CC1100471A2E /* main.m */; };
 		E591C99D19C5CC1100471A2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C99C19C5CC1100471A2E /* AppDelegate.m */; };
 		E591C9A019C5CC1100471A2E /* FOBookCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E591C99E19C5CC1100471A2E /* FOBookCollection.xcdatamodeld */; };
-		E591C9A319C5CC1100471A2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9A219C5CC1100471A2E /* ViewController.m */; };
+		E591C9A319C5CC1100471A2E /* FOBooksListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9A219C5CC1100471A2E /* FOBooksListViewController.m */; };
 		E591C9A619C5CC1100471A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E591C9A419C5CC1100471A2E /* Main.storyboard */; };
 		E591C9A819C5CC1100471A2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E591C9A719C5CC1100471A2E /* Images.xcassets */; };
 		E591C9AB19C5CC1100471A2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E591C9A919C5CC1100471A2E /* LaunchScreen.xib */; };
 		E591C9B719C5CC1100471A2E /* FOBookCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9B619C5CC1100471A2E /* FOBookCollectionTests.m */; };
+		E591C9C419C5CF8A00471A2E /* FOEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9C319C5CF8A00471A2E /* FOEntity.m */; };
+		E591C9CF19C5D5AF00471A2E /* FOBook+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9CE19C5D5AF00471A2E /* FOBook+Custom.m */; };
+		E591C9D319C5D72500471A2E /* FOBooksService.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9D219C5D72500471A2E /* FOBooksService.m */; };
 		FAEFD76971BE4285A5BED709 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7286ADAFDA1446E9E9DB073 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -30,21 +36,33 @@
 
 /* Begin PBXFileReference section */
 		2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E55429F219C60D61001C40BB /* FOBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOBookCell.h; sourceTree = "<group>"; };
+		E55429F319C60D61001C40BB /* FOBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOBookCell.m; sourceTree = "<group>"; };
+		E55429F519C6131E001C40BB /* FOBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOBook.h; path = Data/FOBook.h; sourceTree = "<group>"; };
+		E55429F619C6131E001C40BB /* FOBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOBook.m; path = Data/FOBook.m; sourceTree = "<group>"; };
+		E56EB2B919C61EC0009502CE /* FOContinuousLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOContinuousLoadingView.h; sourceTree = "<group>"; };
+		E56EB2BA19C61EC0009502CE /* FOContinuousLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOContinuousLoadingView.m; sourceTree = "<group>"; };
 		E591C99419C5CC1100471A2E /* FOBookCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOBookCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591C99819C5CC1100471A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E591C99919C5CC1100471A2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E591C99B19C5CC1100471A2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E591C99C19C5CC1100471A2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E591C99F19C5CC1100471A2E /* FOBookCollection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FOBookCollection.xcdatamodel; sourceTree = "<group>"; };
-		E591C9A119C5CC1100471A2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E591C9A219C5CC1100471A2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E591C9A119C5CC1100471A2E /* FOBooksListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FOBooksListViewController.h; sourceTree = "<group>"; };
+		E591C9A219C5CC1100471A2E /* FOBooksListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOBooksListViewController.m; sourceTree = "<group>"; };
 		E591C9A519C5CC1100471A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E591C9A719C5CC1100471A2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E591C9AA19C5CC1100471A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E591C9B019C5CC1100471A2E /* FOBookCollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FOBookCollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591C9B519C5CC1100471A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E591C9B619C5CC1100471A2E /* FOBookCollectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOBookCollectionTests.m; sourceTree = "<group>"; };
+		E591C9C219C5CF8A00471A2E /* FOEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOEntity.h; path = Data/FOEntity.h; sourceTree = "<group>"; };
+		E591C9C319C5CF8A00471A2E /* FOEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOEntity.m; path = Data/FOEntity.m; sourceTree = "<group>"; };
 		E591C9C619C5D05100471A2E /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		E591C9CD19C5D5AF00471A2E /* FOBook+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FOBook+Custom.h"; path = "Data/FOBook+Custom.h"; sourceTree = "<group>"; };
+		E591C9CE19C5D5AF00471A2E /* FOBook+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FOBook+Custom.m"; path = "Data/FOBook+Custom.m"; sourceTree = "<group>"; };
+		E591C9D119C5D72500471A2E /* FOBooksService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOBooksService.h; path = Data/FOBooksService.h; sourceTree = "<group>"; };
+		E591C9D219C5D72500471A2E /* FOBooksService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOBooksService.m; path = Data/FOBooksService.m; sourceTree = "<group>"; };
 		E7286ADAFDA1446E9E9DB073 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +93,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E56EB2BC19C61ED5009502CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E55429F219C60D61001C40BB /* FOBookCell.h */,
+				E55429F319C60D61001C40BB /* FOBookCell.m */,
+				E56EB2B919C61EC0009502CE /* FOContinuousLoadingView.h */,
+				E56EB2BA19C61EC0009502CE /* FOContinuousLoadingView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		E591C98B19C5CC1100471A2E = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +128,12 @@
 		E591C99619C5CC1100471A2E /* FOBookCollection */ = {
 			isa = PBXGroup;
 			children = (
+				E56EB2BC19C61ED5009502CE /* Views */,
 				E591C9C019C5CC9700471A2E /* Data */,
 				E591C99B19C5CC1100471A2E /* AppDelegate.h */,
 				E591C99C19C5CC1100471A2E /* AppDelegate.m */,
-				E591C9A119C5CC1100471A2E /* ViewController.h */,
-				E591C9A219C5CC1100471A2E /* ViewController.m */,
+				E591C9A119C5CC1100471A2E /* FOBooksListViewController.h */,
+				E591C9A219C5CC1100471A2E /* FOBooksListViewController.m */,
 				E591C9A419C5CC1100471A2E /* Main.storyboard */,
 				E591C9A719C5CC1100471A2E /* Images.xcassets */,
 				E591C9A919C5CC1100471A2E /* LaunchScreen.xib */,
@@ -141,8 +171,13 @@
 		E591C9C019C5CC9700471A2E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E591C9D019C5D6FE00471A2E /* Network Services */,
 				E591C99E19C5CC1100471A2E /* FOBookCollection.xcdatamodeld */,
 				E591C9C119C5CC9F00471A2E /* Generated Classes */,
+				E591C9C219C5CF8A00471A2E /* FOEntity.h */,
+				E591C9C319C5CF8A00471A2E /* FOEntity.m */,
+				E591C9CD19C5D5AF00471A2E /* FOBook+Custom.h */,
+				E591C9CE19C5D5AF00471A2E /* FOBook+Custom.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -150,8 +185,19 @@
 		E591C9C119C5CC9F00471A2E /* Generated Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E55429F519C6131E001C40BB /* FOBook.h */,
+				E55429F619C6131E001C40BB /* FOBook.m */,
 			);
 			name = "Generated Classes";
+			sourceTree = "<group>";
+		};
+		E591C9D019C5D6FE00471A2E /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				E591C9D119C5D72500471A2E /* FOBooksService.h */,
+				E591C9D219C5D72500471A2E /* FOBooksService.m */,
+			);
+			name = "Network Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,10 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55429F719C6131E001C40BB /* FOBook.m in Sources */,
+				E591C9CF19C5D5AF00471A2E /* FOBook+Custom.m in Sources */,
 				E591C99D19C5CC1100471A2E /* AppDelegate.m in Sources */,
 				E591C9A019C5CC1100471A2E /* FOBookCollection.xcdatamodeld in Sources */,
-				E591C9A319C5CC1100471A2E /* ViewController.m in Sources */,
+				E56EB2BB19C61EC0009502CE /* FOContinuousLoadingView.m in Sources */,
+				E55429F419C60D61001C40BB /* FOBookCell.m in Sources */,
+				E591C9A319C5CC1100471A2E /* FOBooksListViewController.m in Sources */,
+				E591C9C419C5CF8A00471A2E /* FOEntity.m in Sources */,
 				E591C99A19C5CC1100471A2E /* main.m in Sources */,
+				E591C9D319C5D72500471A2E /* FOBooksService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
