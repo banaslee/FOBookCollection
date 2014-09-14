@@ -15,6 +15,7 @@
 		E591C9A819C5CC1100471A2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E591C9A719C5CC1100471A2E /* Images.xcassets */; };
 		E591C9AB19C5CC1100471A2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E591C9A919C5CC1100471A2E /* LaunchScreen.xib */; };
 		E591C9B719C5CC1100471A2E /* FOBookCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9B619C5CC1100471A2E /* FOBookCollectionTests.m */; };
+		FAEFD76971BE4285A5BED709 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7286ADAFDA1446E9E9DB073 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E591C99419C5CC1100471A2E /* FOBookCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOBookCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591C99819C5CC1100471A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E591C99919C5CC1100471A2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		E591C9B019C5CC1100471A2E /* FOBookCollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FOBookCollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591C9B519C5CC1100471A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E591C9B619C5CC1100471A2E /* FOBookCollectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOBookCollectionTests.m; sourceTree = "<group>"; };
+		E591C9C619C5D05100471A2E /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		E7286ADAFDA1446E9E9DB073 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEFD76971BE4285A5BED709 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE75590D7F83476ABAE680B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7286ADAFDA1446E9E9DB073 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E591C98B19C5CC1100471A2E = {
 			isa = PBXGroup;
 			children = (
+				E591C9C619C5D05100471A2E /* TemplateIcon2x.png */,
 				E591C99619C5CC1100471A2E /* FOBookCollection */,
 				E591C9B319C5CC1100471A2E /* FOBookCollectionTests */,
 				E591C99519C5CC1100471A2E /* Products */,
+				2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */,
+				BE75590D7F83476ABAE680B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +99,7 @@
 		E591C99619C5CC1100471A2E /* FOBookCollection */ = {
 			isa = PBXGroup;
 			children = (
+				E591C9C019C5CC9700471A2E /* Data */,
 				E591C99B19C5CC1100471A2E /* AppDelegate.h */,
 				E591C99C19C5CC1100471A2E /* AppDelegate.m */,
 				E591C9A119C5CC1100471A2E /* ViewController.h */,
@@ -90,7 +107,6 @@
 				E591C9A419C5CC1100471A2E /* Main.storyboard */,
 				E591C9A719C5CC1100471A2E /* Images.xcassets */,
 				E591C9A919C5CC1100471A2E /* LaunchScreen.xib */,
-				E591C99E19C5CC1100471A2E /* FOBookCollection.xcdatamodeld */,
 				E591C99719C5CC1100471A2E /* Supporting Files */,
 			);
 			path = FOBookCollection;
@@ -122,6 +138,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E591C9C019C5CC9700471A2E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E591C99E19C5CC1100471A2E /* FOBookCollection.xcdatamodeld */,
+				E591C9C119C5CC9F00471A2E /* Generated Classes */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		E591C9C119C5CC9F00471A2E /* Generated Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Generated Classes";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E591C9BA19C5CC1100471A2E /* Build configuration list for PBXNativeTarget "FOBookCollection" */;
 			buildPhases = (
+				6A669CE0980E4426936CACC7 /* Check Pods Manifest.lock */,
 				E591C99019C5CC1100471A2E /* Sources */,
 				E591C99119C5CC1100471A2E /* Frameworks */,
 				E591C99219C5CC1100471A2E /* Resources */,
+				96DC4A6AC0FC43829CC6DFCE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +250,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A669CE0980E4426936CACC7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96DC4A6AC0FC43829CC6DFCE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E591C99019C5CC1100471A2E /* Sources */ = {
@@ -347,6 +414,7 @@
 		};
 		E591C9BB19C5CC1100471A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FOBookCollection/Info.plist;
@@ -357,6 +425,7 @@
 		};
 		E591C9BC19C5CC1100471A2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FOBookCollection/Info.plist;
@@ -418,6 +487,7 @@
 				E591C9BC19C5CC1100471A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E591C9BD19C5CC1100471A2E /* Build configuration list for PBXNativeTarget "FOBookCollectionTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +496,7 @@
 				E591C9BF19C5CC1100471A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
