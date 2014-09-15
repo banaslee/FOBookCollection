@@ -59,6 +59,12 @@
     
 }
 
+- (void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super willTransitionToTraitCollection:newCollection withTransitionCoordinator:coordinator];
+    
+    [self.collectionViewLayout invalidateLayout];
+}
+
 - (void)dealloc {
     self.continuousLoadingView = nil;
     [self stopObservingBookServiceNotifications];
