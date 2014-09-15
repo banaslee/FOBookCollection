@@ -18,5 +18,6 @@
 @dynamic title;
 @dynamic udid;
 @dynamic coverImageAspectRatio;
+@dynamic position;
 
 @end

@@ -29,7 +29,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qpd-xR-hvd">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="96" height="145"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Qpd-xR-hvd" secondAttribute="height" multiplier="0.66:1" id="ttB-Of-JMq"/>
                                             </constraints>
@@ -40,14 +40,14 @@
                                             </variation>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Author" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VfN-iN-zQk">
-                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <rect key="frame" x="8" y="121" width="80" height="16"/>
                                             <color key="backgroundColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gf-ST-Yyl">
-                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <rect key="frame" x="8" y="8" width="80" height="19.5"/>
                                             <color key="backgroundColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -75,6 +75,9 @@
                                         <include reference="6gf-ST-Yyl"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="2VI-Ke-vBc"/>
+                                        <include reference="5BK-pk-WG0"/>
+                                        <include reference="gUK-3W-Uyp"/>
                                         <include reference="CPV-4q-kdE"/>
                                         <include reference="tY3-rn-EwJ"/>
                                         <include reference="vpZ-IO-4f1"/>
@@ -82,9 +85,6 @@
                                         <include reference="DVy-rv-JYA"/>
                                         <include reference="XhV-cx-ahY"/>
                                         <include reference="kzj-B6-CmI"/>
-                                        <include reference="2VI-Ke-vBc"/>
-                                        <include reference="5BK-pk-WG0"/>
-                                        <include reference="gUK-3W-Uyp"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -99,13 +99,13 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvb-Z4-PJE">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                     <subviews>
                                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wBD-wA-Z2N">
-                                            <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                            <rect key="frame" x="290" y="15" width="20" height="20"/>
                                         </activityIndicatorView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-O1-o3F">
-                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <rect key="frame" x="8" y="8" width="584" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -126,12 +126,12 @@
                                             <include reference="hd3-O1-o3F"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="QaZ-TM-mWt"/>
+                                            <include reference="tvk-09-59S"/>
                                             <include reference="i0U-t5-unt"/>
                                             <include reference="ixG-xU-1i6"/>
                                             <include reference="lXo-hP-L6r"/>
                                             <include reference="suO-Pn-hSE"/>
-                                            <include reference="QaZ-TM-mWt"/>
-                                            <include reference="tvk-09-59S"/>
                                         </mask>
                                     </variation>
                                 </view>

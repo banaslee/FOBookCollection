@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B82BA63F70F4A68B38975CE /* libPods-MainTarget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9D5C41382E4DA5BDE0B00D /* libPods-MainTarget.a */; };
+		570822883C884D028EAC2F80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D78002797BC64925BF9668F8 /* libPods-Tests.a */; };
 		E55429F419C60D61001C40BB /* FOBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E55429F319C60D61001C40BB /* FOBookCell.m */; };
 		E55429F719C6131E001C40BB /* FOBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E55429F619C6131E001C40BB /* FOBook.m */; };
 		E56EB2BB19C61EC0009502CE /* FOContinuousLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56EB2BA19C61EC0009502CE /* FOContinuousLoadingView.m */; };
 		E56EB2BE19C65E3D009502CE /* FOModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E56EB2BD19C65E3D009502CE /* FOModelTest.m */; };
-		E56EB2C019C66089009502CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E56EB2BF19C66089009502CE /* libPods.a */; };
+		E56EB2CF19C7910D009502CE /* FOBookServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E56EB2CE19C7910D009502CE /* FOBookServiceTests.m */; };
 		E591C99A19C5CC1100471A2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C99919C5CC1100471A2E /* main.m */; };
 		E591C99D19C5CC1100471A2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C99C19C5CC1100471A2E /* AppDelegate.m */; };
 		E591C9A019C5CC1100471A2E /* FOBookCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E591C99E19C5CC1100471A2E /* FOBookCollection.xcdatamodeld */; };
@@ -19,11 +21,9 @@
 		E591C9A619C5CC1100471A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E591C9A419C5CC1100471A2E /* Main.storyboard */; };
 		E591C9A819C5CC1100471A2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E591C9A719C5CC1100471A2E /* Images.xcassets */; };
 		E591C9AB19C5CC1100471A2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E591C9A919C5CC1100471A2E /* LaunchScreen.xib */; };
-		E591C9B719C5CC1100471A2E /* FOBookCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9B619C5CC1100471A2E /* FOBookCollectionTests.m */; };
 		E591C9C419C5CF8A00471A2E /* FOEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9C319C5CF8A00471A2E /* FOEntity.m */; };
 		E591C9CF19C5D5AF00471A2E /* FOBook+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9CE19C5D5AF00471A2E /* FOBook+Custom.m */; };
 		E591C9D319C5D72500471A2E /* FOBooksService.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C9D219C5D72500471A2E /* FOBooksService.m */; };
-		FAEFD76971BE4285A5BED709 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7286ADAFDA1446E9E9DB073 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		89B4DD505D364771BBB6A8FA /* Pods-MainTarget.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainTarget.xcconfig"; path = "Pods/Pods-MainTarget.xcconfig"; sourceTree = "<group>"; };
+		B8F0726C55DD43EFA4B0571E /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		D78002797BC64925BF9668F8 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E55429F219C60D61001C40BB /* FOBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOBookCell.h; sourceTree = "<group>"; };
 		E55429F319C60D61001C40BB /* FOBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOBookCell.m; sourceTree = "<group>"; };
 		E55429F519C6131E001C40BB /* FOBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOBook.h; path = Data/FOBook.h; sourceTree = "<group>"; };
@@ -45,7 +47,8 @@
 		E56EB2B919C61EC0009502CE /* FOContinuousLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOContinuousLoadingView.h; sourceTree = "<group>"; };
 		E56EB2BA19C61EC0009502CE /* FOContinuousLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOContinuousLoadingView.m; sourceTree = "<group>"; };
 		E56EB2BD19C65E3D009502CE /* FOModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOModelTest.m; sourceTree = "<group>"; };
-		E56EB2BF19C66089009502CE /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		E56EB2CC19C78BE7009502CE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E56EB2CE19C7910D009502CE /* FOBookServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOBookServiceTests.m; sourceTree = "<group>"; };
 		E591C99419C5CC1100471A2E /* FOBookCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOBookCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591C99819C5CC1100471A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E591C99919C5CC1100471A2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,7 +62,6 @@
 		E591C9AA19C5CC1100471A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E591C9B019C5CC1100471A2E /* FOBookCollectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FOBookCollectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591C9B519C5CC1100471A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E591C9B619C5CC1100471A2E /* FOBookCollectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOBookCollectionTests.m; sourceTree = "<group>"; };
 		E591C9C219C5CF8A00471A2E /* FOEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOEntity.h; path = Data/FOEntity.h; sourceTree = "<group>"; };
 		E591C9C319C5CF8A00471A2E /* FOEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOEntity.m; path = Data/FOEntity.m; sourceTree = "<group>"; };
 		E591C9C619C5D05100471A2E /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		E591C9CE19C5D5AF00471A2E /* FOBook+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FOBook+Custom.m"; path = "Data/FOBook+Custom.m"; sourceTree = "<group>"; };
 		E591C9D119C5D72500471A2E /* FOBooksService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOBooksService.h; path = Data/FOBooksService.h; sourceTree = "<group>"; };
 		E591C9D219C5D72500471A2E /* FOBooksService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOBooksService.m; path = Data/FOBooksService.m; sourceTree = "<group>"; };
-		E7286ADAFDA1446E9E9DB073 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9D5C41382E4DA5BDE0B00D /* libPods-MainTarget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainTarget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAEFD76971BE4285A5BED709 /* libPods.a in Frameworks */,
+				1B82BA63F70F4A68B38975CE /* libPods-MainTarget.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E56EB2C019C66089009502CE /* libPods.a in Frameworks */,
+				570822883C884D028EAC2F80 /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +95,9 @@
 		BE75590D7F83476ABAE680B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E56EB2BF19C66089009502CE /* libPods.a */,
-				E7286ADAFDA1446E9E9DB073 /* libPods.a */,
+				E56EB2CC19C78BE7009502CE /* SenTestingKit.framework */,
+				ED9D5C41382E4DA5BDE0B00D /* libPods-MainTarget.a */,
+				D78002797BC64925BF9668F8 /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,8 +120,9 @@
 				E591C99619C5CC1100471A2E /* FOBookCollection */,
 				E591C9B319C5CC1100471A2E /* FOBookCollectionTests */,
 				E591C99519C5CC1100471A2E /* Products */,
-				2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */,
 				BE75590D7F83476ABAE680B3 /* Frameworks */,
+				89B4DD505D364771BBB6A8FA /* Pods-MainTarget.xcconfig */,
+				B8F0726C55DD43EFA4B0571E /* Pods-Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,8 +164,8 @@
 		E591C9B319C5CC1100471A2E /* FOBookCollectionTests */ = {
 			isa = PBXGroup;
 			children = (
-				E591C9B619C5CC1100471A2E /* FOBookCollectionTests.m */,
 				E56EB2BD19C65E3D009502CE /* FOModelTest.m */,
+				E56EB2CE19C7910D009502CE /* FOBookServiceTests.m */,
 				E591C9B419C5CC1100471A2E /* Supporting Files */,
 			);
 			path = FOBookCollectionTests;
@@ -233,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E591C9BD19C5CC1100471A2E /* Build configuration list for PBXNativeTarget "FOBookCollectionTests" */;
 			buildPhases = (
+				A13ADEDB77B64D2D8F2100CF /* Check Pods Manifest.lock */,
 				E591C9AC19C5CC1100471A2E /* Sources */,
 				E591C9AD19C5CC1100471A2E /* Frameworks */,
 				E591C9AE19C5CC1100471A2E /* Resources */,
+				016C330411D34E8497BA0ECD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,6 +311,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		016C330411D34E8497BA0ECD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6A669CE0980E4426936CACC7 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,7 +353,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-MainTarget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A13ADEDB77B64D2D8F2100CF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -360,7 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E56EB2BE19C65E3D009502CE /* FOModelTest.m in Sources */,
-				E591C9B719C5CC1100471A2E /* FOBookCollectionTests.m in Sources */,
+				E56EB2CF19C7910D009502CE /* FOBookServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,10 +510,12 @@
 		};
 		E591C9BB19C5CC1100471A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */;
+			baseConfigurationReference = 89B4DD505D364771BBB6A8FA /* Pods-MainTarget.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FOBookCollection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -485,10 +523,12 @@
 		};
 		E591C9BC19C5CC1100471A2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B3586D70BFC43D6B5DFEE78 /* Pods.xcconfig */;
+			baseConfigurationReference = 89B4DD505D364771BBB6A8FA /* Pods-MainTarget.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = FOBookCollection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,11 +536,13 @@
 		};
 		E591C9BE19C5CC1100471A2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F0726C55DD43EFA4B0571E /* Pods-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -509,7 +551,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"${SRCROOT}/Pods/Headers/**",
 				);
 				INFOPLIST_FILE = FOBookCollectionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -530,16 +571,17 @@
 		};
 		E591C9BF19C5CC1100471A2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F0726C55DD43EFA4B0571E /* Pods-Tests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"${SRCROOT}/Pods/Headers/**",
 				);
 				INFOPLIST_FILE = FOBookCollectionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

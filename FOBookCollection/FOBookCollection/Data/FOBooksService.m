@@ -10,6 +10,8 @@
 
 #import "FOBook+Custom.h"
 
+#import "AFNetworking.h"
+
 NSString *const FOBooksServiceNotification = @"FOBooksServiceNotification";
 
 NSString *const FOServiceNotificationTypeKey = @"type";
@@ -103,9 +105,11 @@ NSString *const FOServiceNotificationTypeFail = @"fail";
                                                         }
     }
                                                     failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                                        [[NSNotificationCenter defaultCenter] postNotificationName:FOBooksServiceNotification
-                                                                                                            object:self
-                                                                                                          userInfo:@{FOServiceNotificationTypeKey: FOServiceNotificationTypeFail,FOServiceNotificationOperationKey: operation}];
+                                                        if (!operation.isCancelled) {
+                                                            [[NSNotificationCenter defaultCenter] postNotificationName:FOBooksServiceNotification
+                                                                                                                object:self
+                                                                                                              userInfo:@{FOServiceNotificationTypeKey: FOServiceNotificationTypeFail,FOServiceNotificationOperationKey: operation}];
+                                                        }
     }];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:FOBooksServiceNotification

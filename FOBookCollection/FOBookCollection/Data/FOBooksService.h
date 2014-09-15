@@ -8,8 +8,9 @@
 
 @import Foundation;
 
-#import "AFNetworking.h"
 #import "CoreData+MagicalRecord.h"
+
+@class AFHTTPRequestOperationManager;
 
 FOUNDATION_EXPORT NSString *const FOBooksServiceNotification;
 FOUNDATION_EXPORT NSString *const FOServiceNotificationTypeKey;

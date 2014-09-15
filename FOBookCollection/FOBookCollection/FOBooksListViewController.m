@@ -21,7 +21,7 @@
 
 #define REQUEST_PAGE_SIZE 27
 #define CATEGORY_ID @"Wma8RpqpC6UcWye2U8qUg-6a21w"
-#define LOAD_PERCENTAGE .95f
+#define LOAD_PERCENTAGE .8f
 
 @interface FOBooksListViewController () <NSFetchedResultsControllerDelegate>
 @property (nonatomic, strong) NSFetchedResultsController *allBooks;

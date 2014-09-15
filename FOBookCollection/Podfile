@@ -1,2 +1,16 @@
-pod 'AFNetworking', '~> 2.0'
-pod 'MagicalRecord', '~> 2.2'
+platform :ios, '8.0'
+set_arc_compatibility_flag!
+inhibit_all_warnings!
+
+target :MainTarget, :exclusive => true do
+    link_with 'FOBookCollection'
+    
+    pod 'AFNetworking', '~> 2.0'
+    pod 'MagicalRecord', '~> 2.2'
+end
+
+target :Tests, :exclusive => true do
+    link_with 'FOBookCollectionTests'
+    
+    pod 'MagicalRecord', '~> 2.2'
+end
