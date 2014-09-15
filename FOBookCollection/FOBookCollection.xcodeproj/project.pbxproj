@@ -10,6 +10,8 @@
 		E55429F419C60D61001C40BB /* FOBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E55429F319C60D61001C40BB /* FOBookCell.m */; };
 		E55429F719C6131E001C40BB /* FOBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E55429F619C6131E001C40BB /* FOBook.m */; };
 		E56EB2BB19C61EC0009502CE /* FOContinuousLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56EB2BA19C61EC0009502CE /* FOContinuousLoadingView.m */; };
+		E56EB2BE19C65E3D009502CE /* FOModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E56EB2BD19C65E3D009502CE /* FOModelTest.m */; };
+		E56EB2C019C66089009502CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E56EB2BF19C66089009502CE /* libPods.a */; };
 		E591C99A19C5CC1100471A2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C99919C5CC1100471A2E /* main.m */; };
 		E591C99D19C5CC1100471A2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E591C99C19C5CC1100471A2E /* AppDelegate.m */; };
 		E591C9A019C5CC1100471A2E /* FOBookCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E591C99E19C5CC1100471A2E /* FOBookCollection.xcdatamodeld */; };
@@ -42,6 +44,8 @@
 		E55429F619C6131E001C40BB /* FOBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOBook.m; path = Data/FOBook.m; sourceTree = "<group>"; };
 		E56EB2B919C61EC0009502CE /* FOContinuousLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOContinuousLoadingView.h; sourceTree = "<group>"; };
 		E56EB2BA19C61EC0009502CE /* FOContinuousLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOContinuousLoadingView.m; sourceTree = "<group>"; };
+		E56EB2BD19C65E3D009502CE /* FOModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOModelTest.m; sourceTree = "<group>"; };
+		E56EB2BF19C66089009502CE /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		E591C99419C5CC1100471A2E /* FOBookCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOBookCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591C99819C5CC1100471A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E591C99919C5CC1100471A2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56EB2C019C66089009502CE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,7 @@
 		BE75590D7F83476ABAE680B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E56EB2BF19C66089009502CE /* libPods.a */,
 				E7286ADAFDA1446E9E9DB073 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -155,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				E591C9B619C5CC1100471A2E /* FOBookCollectionTests.m */,
+				E56EB2BD19C65E3D009502CE /* FOModelTest.m */,
 				E591C9B419C5CC1100471A2E /* Supporting Files */,
 			);
 			path = FOBookCollectionTests;
@@ -352,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56EB2BE19C65E3D009502CE /* FOModelTest.m in Sources */,
 				E591C9B719C5CC1100471A2E /* FOBookCollectionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,8 +506,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SRCROOT}/Pods/Headers/**",
+				);
 				INFOPLIST_FILE = FOBookCollectionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FOBookCollection.app/FOBookCollection";
 			};
@@ -513,8 +536,23 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SRCROOT}/Pods/Headers/**",
+				);
 				INFOPLIST_FILE = FOBookCollectionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FOBookCollection.app/FOBookCollection";
 			};

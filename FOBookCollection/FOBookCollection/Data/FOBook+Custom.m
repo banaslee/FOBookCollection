@@ -21,16 +21,18 @@
 - (void)setValuesFromDictionary:(NSDictionary *)jsonDict {
     [super setValuesFromDictionary:jsonDict];
     
-    NSURL *smallCoverImageUrl = [NSURL URLWithString:jsonDict[@"small_cover_image_url"]];
-    NSString *pathExtension = smallCoverImageUrl.query;
-    NSMutableArray *parameters = [pathExtension componentsSeparatedByString:@"&"].mutableCopy;
-    for (NSString *parameter in parameters) {
-        if ([parameter hasPrefix:[NSString stringWithFormat:@"%@=", IMAGE_SIZE_PARAMETER_NAME]]) {
-            [parameters removeObject:parameter];
+    if (jsonDict[@"small_cover_image_url"]) {
+        NSURL *smallCoverImageUrl = [NSURL URLWithString:jsonDict[@"small_cover_image_url"]];
+        NSString *pathExtension = smallCoverImageUrl.query;
+        NSMutableArray *parameters = [pathExtension componentsSeparatedByString:@"&"].mutableCopy;
+        for (NSString *parameter in parameters) {
+            if ([parameter hasPrefix:[NSString stringWithFormat:@"%@=", IMAGE_SIZE_PARAMETER_NAME]]) {
+                [parameters removeObject:parameter];
+            }
         }
+        NSString *newPathExtension = [parameters componentsJoinedByString:@"&"];
+        self.coverImageUrl = [[smallCoverImageUrl absoluteString] stringByReplacingOccurrencesOfString:pathExtension withString:newPathExtension];
     }
-    NSString *newPathExtension = [parameters componentsJoinedByString:@"&"];
-    self.coverImageUrl = [[smallCoverImageUrl absoluteString] stringByReplacingOccurrencesOfString:pathExtension withString:newPathExtension];
 }
 
 @end

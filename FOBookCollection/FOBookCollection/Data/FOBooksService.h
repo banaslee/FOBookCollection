@@ -8,6 +8,7 @@
 
 @import Foundation;
 
+#import "AFNetworking.h"
 #import "CoreData+MagicalRecord.h"
 
 FOUNDATION_EXPORT NSString *const FOBooksServiceNotification;
@@ -20,5 +21,9 @@ FOUNDATION_EXPORT NSString *const FOServiceNotificationTypeFail;
 
 @interface FOBooksService : NSObject
 
++ (AFHTTPRequestOperationManager *)operationManagerWithBaseUrl:(NSURL*)baseUrl;
 + (void)requestBooksInCategory:(NSString *)categoryId withPageId:(NSInteger)pageId andPageSize:(NSInteger)pageSize inContext:(NSManagedObjectContext *)context;
+
+- (instancetype)initWithOperationManager:(AFHTTPRequestOperationManager *)operationManager;
+- (void)requestBooksInCategory:(NSString *)categoryId withPageId:(NSInteger)pageId andPageSize:(NSInteger)pageSize inContext:(NSManagedObjectContext *)context;
 @end

@@ -180,7 +180,9 @@
     FOBookCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FOBookCell" forIndexPath:indexPath];
     FOBook *book = [self.allBooks objectAtIndexPath:indexPath];
     
-    [cell.coverImageView setImageWithURL:[FOBook imageURLWithString:book.coverImageUrl forSize:cell.bounds.size]];
+    if (book.coverImageUrl.length) {
+        [cell.coverImageView setImageWithURL:[FOBook imageURLWithString:book.coverImageUrl forSize:cell.bounds.size]];
+    }
     cell.titleLabel.text = book.title;
     cell.authorLabel.text = book.author;
     [cell setNeedsLayout];

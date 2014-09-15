@@ -10,8 +10,6 @@
 
 #import "FOBook+Custom.h"
 
-#import "AFNetworking.h"
-
 NSString *const FOBooksServiceNotification = @"FOBooksServiceNotification";
 
 NSString *const FOServiceNotificationTypeKey = @"type";
@@ -30,6 +28,14 @@ NSString *const FOServiceNotificationTypeFail = @"fail";
 @implementation FOBooksService
 
 #pragma mark - Class methods
++ (AFHTTPRequestOperationManager *)operationManagerWithBaseUrl:(NSURL*)baseUrl {
+    AFHTTPRequestOperationManager *operationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseUrl];
+    operationManager.requestSerializer = [[AFJSONRequestSerializer alloc] init];
+    operationManager.responseSerializer = [[AFJSONResponseSerializer alloc] init];
+    
+    return operationManager;
+}
+
 + (instancetype)sharedInstance {
     static id gInstance = nil;
     static dispatch_once_t pred;
@@ -48,11 +54,19 @@ NSString *const FOServiceNotificationTypeFail = @"fail";
 }
 
 #pragma mark - Instance methods
+- (instancetype)initWithOperationManager:(AFHTTPRequestOperationManager *)operationManager {
+    self = [super init];
+    
+    if (self) {
+        _operationManager = operationManager;
+    }
+    
+    return self;
+}
+
 - (AFHTTPRequestOperationManager *)operationManager {
     if (!_operationManager) {
-        _operationManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://turbine-production-eu.herokuapp.com"]];
-        _operationManager.requestSerializer = [[AFJSONRequestSerializer alloc] init];
-        _operationManager.responseSerializer = [[AFJSONResponseSerializer alloc] init];
+        _operationManager = [FOBooksService operationManagerWithBaseUrl:[NSURL URLWithString:@"http://turbine-production-eu.herokuapp.com"]];
     }
     
     return _operationManager;
